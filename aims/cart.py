@@ -33,3 +33,15 @@ class Cart:
 
         for item in self.items:
             print(item)
+
+    def search_by_title(self, title):
+        """Tìm DVD theo tên, không phân biệt chữ hoa/chữ thường."""
+        if not title or not title.strip():
+            return []
+
+        keyword = title.strip().casefold()
+
+        return [
+            dvd for dvd in self.items
+            if keyword in dvd.title.casefold()
+        ]
