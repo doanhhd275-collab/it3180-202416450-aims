@@ -25,6 +25,11 @@ class Cart:
 
     def total_cost(self):
         return sum(item.cost for item in self.items)
+    
+    def total_cost_with_discount(self, percent):
+        """Tổng tiền sau khi giảm percent%."""
+        total = self.total_cost()
+        return total * percent / 100
 
     def print_cart(self):
         if not self.items:
