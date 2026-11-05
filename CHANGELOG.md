@@ -1,7 +1,9 @@
 # Changelog
 
 ## [Unreleased]
-
+## [1.1.1] - 2026-11-05
+### Fixed
+- Thông báo khi giỏ hàng đầy được báo đúng "The cart is full" (#26)
 ## [1.1.0] - 2026-11-05
 
 ### Added
