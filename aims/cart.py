@@ -34,6 +34,14 @@ class Cart:
     def count(self):
         """Số đĩa trong giỏ."""
         return len(self.items)
+
+    def sort_by_title(self):
+        """Danh sách DVD sắp xếp theo tên (không phân biệt hoa/thường)."""
+        return sorted(self.items, key=lambda dvd: dvd.title.casefold())
+
+    def sort_by_cost(self):
+        """Danh sách DVD sắp xếp theo giá tăng dần."""
+        return sorted(self.items, key=lambda dvd: dvd.cost)
     def print_cart(self):
         if not self.items:
             print("The cart is empty")
