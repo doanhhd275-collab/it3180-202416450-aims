@@ -1,6 +1,10 @@
 # Changelog
 
 ## [Unreleased]
+## [1.0.1] - 2026-11-05
+
+### Fixed
+- Thông báo "The cart is full" khi giỏ đã đầy (trước đây là "almost full") (#26)
 
 ## [1.0.0] - 2026-11-05
 
