@@ -3,7 +3,7 @@ from aims.cart import Cart
 from aims.search import search_by_title, search_by_category
 
 def main():
-    print("AIMS-mini v1.0.0\n")
+    print("AIMS-mini v1.1.0\n")
     cart = Cart()
     cart.add_dvd(DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95))
     cart.add_dvd(DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 87, 24.95))
