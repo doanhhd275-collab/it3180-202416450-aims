@@ -2,12 +2,16 @@
 
 ## [Unreleased]
 
+### Added
+- search_by_category() trong aims/search.py (#9)
+- docs/use-case.md và docs/answers-lab01.md
+
 ## [1.0.0] - 2026-11-05
 
 ### Added
-- Cart.print_cart()
-- search_by_title()
-- total_cost_with_discount()
+- Cart.print_cart() hiển thị giỏ hàng, báo "The cart is empty" khi trống
+- Cart.search_by_title() tìm DVD theo tên, không phân biệt hoa/thường
+- Pull request template
 
 ### Fixed
-- Fix cart limit bug (#6)
+- Giỏ hàng không còn nhận đĩa thứ 21, giới hạn 20 đĩa (PR #6)
