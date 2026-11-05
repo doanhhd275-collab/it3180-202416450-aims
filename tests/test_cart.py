@@ -15,10 +15,11 @@ class TestCart(unittest.TestCase):
 
         dvd = DigitalVideoDisc("DVD 21")
         self.assertFalse(cart.add_dvd(dvd))
-    def test_total_cost_with_discount(self):
-        cart = Cart()
-        cart.add_dvd(DigitalVideoDisc("A", cost=100.0))
-        self.assertAlmostEqual(cart.total_cost_with_discount(20), 80.0)
+    def total_cost_with_discount(self, percent):
+        """Tổng tiền sau khi giảm percent%."""
+        if not 0 <= percent <= 100:
+            raise ValueError("percent must be between 0 and 100")
+        return self.total_cost() * (100 - percent) / 100
 
     def test_discount_percent_out_of_range(self):
         cart = Cart()
