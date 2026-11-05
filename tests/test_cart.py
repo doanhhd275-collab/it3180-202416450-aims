@@ -26,6 +26,11 @@ class TestCart(unittest.TestCase):
         cart.add_dvd(DigitalVideoDisc("A", cost=100.0))
         with self.assertRaises(ValueError):
             cart.total_cost_with_discount(150)
+    def test_count(self):
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("A"))
+        cart.add_dvd(DigitalVideoDisc("B"))
+        self.assertEqual(cart.count(), 2)
 
 
 if __name__ == "__main__":
