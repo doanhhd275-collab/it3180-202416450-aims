@@ -2,10 +2,17 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-05
+
 ### Added
 - search_by_category() trong aims/search.py (#9)
-- docs/use-case.md và docs/answers-lab01.md
+- Cart.total_cost_with_discount(percent)
+- Cart.count()
 - Cart.sort_by_title() và Cart.sort_by_cost()
+- docs/use-case.md và docs/answers-lab01..04.md
+
+### Changed
+- Thông báo khi thêm đĩa chuyển sang tiếng Việt
 
 ## [1.0.0] - 2026-11-05
 
