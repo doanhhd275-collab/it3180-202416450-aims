@@ -33,7 +33,7 @@ class Cart:
         return self.total_cost() * (100 - percent) / 100
     def count(self):
         """Số đĩa trong giỏ."""
-        return len(self.items) - 1
+        return len(self.items)
     def print_cart(self):
         if not self.items:
             print("The cart is empty")
