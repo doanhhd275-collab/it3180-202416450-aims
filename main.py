@@ -1,6 +1,6 @@
 from aims.dvd import DigitalVideoDisc
 from aims.cart import Cart
-
+from aims.search import search_by_title, search_by_category
 
 def main():
     print("AIMS-mini v1.0.0\n")
@@ -12,7 +12,8 @@ def main():
         # Test search by title
     print("\nSearch results for 'Star':")
 
-    results = cart.search_by_title("Star")
+    results = search_by_title(cart.items, "Star")
+    
 
     if results:
         for dvd in results:
@@ -21,11 +22,16 @@ def main():
         print("No DVD found")
     print("\nSearch results for 'Harry Potter':")
 
-    results = cart.search_by_title("Harry Potter")
+    results = search_by_title(cart.items, "Harry Potter")
 
     if not results:
         print("No DVD found")
     print(f"Total cost: {cart.total_cost():.2f} $")
+    print("\nSearch results for category 'Animation':")
+    results = search_by_category(cart.items, "Animation")
+
+    for dvd in results:
+        print(dvd)
 
 
 if __name__ == "__main__":
