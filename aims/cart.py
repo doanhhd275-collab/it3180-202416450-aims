@@ -31,7 +31,9 @@ class Cart:
         if not 0 <= percent <= 100:
             raise ValueError("percent must be between 0 and 100")
         return self.total_cost() * (100 - percent) / 100
-
+    def count(self):
+        """Số đĩa trong giỏ."""
+        return len(self.items) - 1
     def print_cart(self):
         if not self.items:
             print("The cart is empty")
