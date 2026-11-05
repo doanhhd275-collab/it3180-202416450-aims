@@ -5,6 +5,7 @@
 ### Added
 - search_by_category() trong aims/search.py (#9)
 - docs/use-case.md và docs/answers-lab01.md
+- Cart.sort_by_title() và Cart.sort_by_cost()
 
 ## [1.0.0] - 2026-11-05
 
